@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Jayaraj Aalas — Portfolio
+
+Front-end-only personal portfolio built with Next.js (App Router, TypeScript, plain CSS).
+Structure/UX is inspired by the numbered-section layout of allen-peter.vercel.app; all
+content comes from Jayaraj's resume.
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view it.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Editing content
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Almost all site text lives in **`data/content.ts`**:
 
-## Learn More
+- `site` — name, initials, tagline, email
+- `about` — bio paragraphs
+- `projects` — the 3 project placeholders (Deepfake Detection, Hospital Management
+  System, E-Commerce Website). Each has empty `tech` and `link` fields marked
+  `// TODO` — fill these in once you upload the real project details (screenshots,
+  live links, GitHub repos, tech stack).
+- `beyondTheCode` — certifications / workshops
+- `socials` — LinkedIn, email, phone
 
-To learn more about Next.js, take a look at the following resources:
+Sections themselves live in `components/` (`Nav`, `Hero`, `About`, `Projects`,
+`ProjectCard`, `BeyondTheCode`, `Footer`) if you want to change layout or styling —
+each has a matching `*.module.css` file.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Build
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run build
+```
 
-## Deploy on Vercel
+## Deploying later
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is a static Next.js front end with no backend — it can be deployed to
+Vercel (recommended, zero-config) or any static/Node host once you're ready.

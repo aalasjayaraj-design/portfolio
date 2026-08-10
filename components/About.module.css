@@ -1,0 +1,12 @@
+.body {
+  display: grid;
+  gap: 1.25rem;
+  max-width: 42rem;
+  color: #bec8d7;
+  font-size: 1.02rem;
+}
+
+.body p:first-child {
+  color: var(--foreground);
+  font-size: 1.15rem;
+}
