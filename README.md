@@ -1,8 +1,7 @@
 # Jayaraj Aalas — Portfolio
 
 Front-end-only personal portfolio built with Next.js (App Router, TypeScript, plain CSS).
-Structure/UX is inspired by the numbered-section layout of allen-peter.vercel.app; all
-content comes from Jayaraj's resume.
+Uses a numbered-section layout, with all content sourced from Jayaraj's resume.
 
 ## Getting Started
 
