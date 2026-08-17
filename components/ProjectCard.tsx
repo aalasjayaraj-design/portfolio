@@ -14,7 +14,12 @@ export default function ProjectCard({ project }: { project: Project }) {
         </ul>
       )}
       {project.link ? (
-        <a className={styles.link} href={project.link}>
+        <a
+          className={styles.link}
+          href={project.link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           View project →
         </a>
       ) : (

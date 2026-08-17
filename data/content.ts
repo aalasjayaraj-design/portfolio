@@ -25,18 +25,18 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    name: "Deepfake Video Detection Using Deep Learning",
+    name: "AI Image Analyser",
     description:
-      "A deep learning model built with Python to detect deepfake videos by analyzing visual artifacts and inconsistencies across video frames.",
-    tech: [], // TODO: add tech stack
-    link: undefined, // TODO: add link
+      "A deep learning app built with Python/Flask that detects AI-generated vs. human-created images, video, audio, and text, using CLIP for image analysis.",
+    tech: ["Python", "Flask", "PyTorch", "CLIP"],
+    link: "https://github.com/aalasjayaraj-design/AI-Image-Analyser",
   },
   {
     name: "Hospital Management System",
     description:
-      "A full-featured hospital management web application for managing patient records and appointments, built with HTML, CSS, and JavaScript.",
-    tech: [], // TODO: add tech stack
-    link: undefined, // TODO: add link
+      "A full-featured hospital management web application with role-based dashboards for Admin, Doctor, Nurse, Pharmacist, Accountant, and Patient, built with Flask and SQLAlchemy.",
+    tech: ["Python", "Flask", "SQLAlchemy", "SQLite/MySQL"],
+    link: "https://github.com/aalasjayaraj-design/Hospital-Management-System",
   },
   {
     name: "E-Commerce Website",
